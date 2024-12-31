@@ -23,8 +23,6 @@ app.set('view engine', 'handlebars')
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-
-
 db
   .authenticate()
   .then(() => {
@@ -64,8 +62,6 @@ app.get('/', (req, res) => {
     })
       .catch(err => console.log(err))
   }
-
-
 })
 
 // jobs routes

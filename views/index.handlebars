@@ -26,9 +26,9 @@
             <img src="/img/company.png" alt="">
             <p>{{dataValues.company}}</p>
             <h2>{{dataValues.title}}</h2>
-            <p>{{dataValues.value}}</p>
+            <p>{{dataValues.salary}}</p>
             <span class="new-job-label">Nova</span>
-            <a class="btn btn-primary" href="">Ver vaga</a>
+            <a class="btn btn-primary" href="/jobs/view/{{dataValues.id}}">Ver vaga</a>
           </li>
           {{/each}}
         </ul>
